@@ -1,0 +1,20 @@
+/* 标题样式 */
+.title-1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+.title-label {
+    margin: 0px 0px 5px 10px;
+    font-size: 14px;
+    color: var(--text-color-2);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input,
+select:not(:valid) {
+    color: #999;
+}
