@@ -169,7 +169,8 @@ const Exit = () => {
       Fine-grained tokens → Generate new token → 填入信息，选择存放图片的仓库 → Repository permissions → 
       Contents权限改为Read and write → Generate token → 复制token → 粘贴到上方输入框<br /><br />
       课程展示用token： <br />
-      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` : ''">
+      github_pat_11AUWR7MY0KGaORihLxYiH_<br />
+      NV7DWZmehGKBhf9P1qUkuxYgIsJKjDbccxsQK4GeQAo4NILP3QIVXQF6N7z` : ''">
     </l-form-item>
   </div>
 </template>
