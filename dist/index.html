@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<!-- 前端入口文件 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PicBox - 图片上传管理工具</title>
+    <link rel="icon" href="/picbox/assets/favicon.6c231f72.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script type="module" crossorigin src="/picbox/assets/index.f056e805.js"></script>
+  <link rel="modulepreload" href="/picbox/assets/vendor.1aa4b248.js">
+  <link rel="stylesheet" href="/picbox/assets/index.8e3a9f23.css">
+</head>
+
+<!-- 主函数挂载点 -->
+<body>
+    <div id="app"></div>
+    
+</body>
+
+<!-- 引入Fancybox优化图片展示效果 （开源代码）-->
+<script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        dragToClose: false,
+        Toolbar: false,
+        closeButton: "top",
+        Image: {},
+        on: {
+            initCarousel: (fancybox) => {
+                const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+                fancybox.$container.style.setProperty(
+                    "--bg-image",
+                    `url("${slide.$thumb.src}")`
+                );
+            },
+            "Carousel.change": (fancybox, carousel, to, from) => {
+                const slide = carousel.slides[to];
+                fancybox.$container.style.setProperty(
+                    "--bg-image",
+                    `url("${slide.$thumb.src}")`
+                );
+            },
+        },
+    });
+</script>
+
+</html>
