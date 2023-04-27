@@ -6,7 +6,7 @@ import Setting from '../views/Setting.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/picbox',          // 主界面路径
+    path: '/',          // 主界面路径
     name: 'Index',
     component: Index,
     meta: {},

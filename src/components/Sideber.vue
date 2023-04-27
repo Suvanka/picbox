@@ -100,7 +100,7 @@ defineExpose({
           :key="index"
           class="item"
           :class="{ active: route.query.folder == item.name }"
-          :href="`/#/?folder=${item.name}`"
+          :href="`/picbox/#/?folder=${item.name}`"
         >
           {{ item.name }}
           <span class="status-point"></span>
