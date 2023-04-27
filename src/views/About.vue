@@ -11,8 +11,7 @@
       </a><br />
       由于Github在国内访问速度较慢，必要时请使用代理<br /><br />
       作者：刘凡嘉<br />
-      学号：520021910751<br />
-      
+      学号：520021910751
     </div>
   </div>
 </template>
@@ -28,10 +27,6 @@
     margin-top: 20px;
     color: var(--text-color);
     line-height: 30px;
-    a {
-      color: var(--primary-color);
-      text-decoration: underline;
-    }
   }
 }
 </style>

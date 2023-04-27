@@ -38,7 +38,7 @@ const change = (e) => {
 
 <template>
   <select v-model="v" @change="change">
-    <option value="" hidden>无选择</option>
+    <option value="" hidden>请选择</option>
     <option
       v-for="item in props.option"
       :value="item[value]"
