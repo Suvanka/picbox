@@ -1,7 +1,5 @@
 # PicBox
-NIS3366 项目管理与软件设计
-
-小作业：图片上传管理工具（图床）：PicBox
+图片上传管理工具（图床）：PicBox
 
 Demo：https://suvanka.top/picbox/
 
